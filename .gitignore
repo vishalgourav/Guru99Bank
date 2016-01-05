@@ -1,0 +1,7 @@
+*.logs
+.classpath
+bin/
+.project
+.settings
+test-output/
+Screenshots/
