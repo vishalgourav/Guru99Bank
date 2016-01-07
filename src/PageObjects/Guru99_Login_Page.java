@@ -28,4 +28,11 @@ public class Guru99_Login_Page {
         return element;
 
         }
+    public static WebElement Reset(WebDriver driver){
+      	 
+    	element = driver.findElement(By.cssSelector("input[type='reset']"));
+
+        return element;
+
+        }
 }

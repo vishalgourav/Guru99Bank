@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">  
+  <test name="Guru99_Login">
+   <classes> 
+                    <class name="TestSuites.Guru99_Login_invalid"/> 
+                     <class name="TestSuites.Guru99_Login_valid"/> 
+                                                                                                                                                          </classes>
+      </test>
+  </suite> 

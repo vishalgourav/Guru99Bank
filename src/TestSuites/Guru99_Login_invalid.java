@@ -15,12 +15,13 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import PageObjects.Guru99_Login_Page;
+import TestData.TestData1;
 
-public class Guru99_Login {
+public class Guru99_Login_invalid {
 	private static Properties prop = new Properties();
 	private static WebDriver driver = new FirefoxDriver();
 	public static void setDriver(WebDriver driver) {
-		Guru99_Login.driver = driver;
+		Guru99_Login_invalid.driver = driver;
 	}
 	public static Properties getProp() {
 		return prop;
@@ -31,10 +32,10 @@ public class Guru99_Login {
 	@BeforeSuite
 	public static void login() throws IOException 
 {
-	System.out.println("Inside Login");
+	System.out.println("Inside Invalid Login");
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	File file = new File(
+		File file = new File(
 			"D:\\Auto_Ajoy\\Guru99Bank\\src\\Config\\Config.properties");
 		FileInputStream fileInput = null;
 	try 
@@ -50,34 +51,32 @@ public class Guru99_Login {
 	}
 	
 }
+	
 	@Test(priority=0)
 	public void geturl()
     {
 		driver.get(prop.getProperty("url"));
     }
 	
-	@Test(priority=1)
-    public void enter_username()
+	@Test(dataProvider="getData",dataProviderClass=TestData1.class,priority=1)
+    public void enter_credentials(String username, String password)
     {
 		Guru99_Login_Page.Enter_UserName(driver)
-				.sendKeys(prop.getProperty("username"));
-    }
-	@Test(priority=2)
-    public void enter_password()
-    {
-		Guru99_Login_Page.Enter_Password(driver)
-				.sendKeys(prop.getProperty("password"));
+		.sendKeys(username);
+Guru99_Login_Page.Enter_Password(driver)
+.sendKeys(password);
     }
 	@Test(priority=3)
     public void click_login() throws IOException
     {
-		Guru99_Login_Page.Login(driver).click();
-		System.out
-		.println(" Login Successfully, now it is the time to shop buddy");
+		//Guru99_Login_Page.Login(driver).click();
+		Guru99_Login_Page.Reset(driver).click();
 		String title=driver.getTitle();
 		System.out.println(title);
 //		Assert.assertEquals("My account - My Store", title);
 		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C:\\Users\\ajoyb\\Desktop\\ajoymitm\\MainProject\\src\\Screenshots\\loginsucess.png"));
-    }
+		FileUtils.copyFile(src, new File("D:\\Auto_Ajoy\\Guru99Bank\\src\\Screenshots\\testsuccess.jpeg"));
+		    }
+	 
 }
+
