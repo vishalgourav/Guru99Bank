@@ -10,33 +10,7 @@ public class TestData1 {
 		 return new Object[][] { 
 				 { "testuser_1", "Test@123" }, 
 				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 { "testuser_1", "Test@123" }, 
-				 { "testuser_1", "Test@123" },
-				 		 
+				 				 		 
 		 };
 	}
 	}

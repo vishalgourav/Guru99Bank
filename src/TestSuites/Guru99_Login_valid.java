@@ -34,6 +34,5 @@ public class Guru99_Login_valid {
 //		Assert.assertEquals("My account - My Store", title);
 		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("D:\\Auto_Ajoy\\Guru99Bank\\src\\Screenshots\\testsuccess.jpeg"));
-   driver.close();
-    }
+       }
 }
