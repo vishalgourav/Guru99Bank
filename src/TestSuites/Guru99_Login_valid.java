@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 import PageObjects.Guru99_Login_Page;
 
 public class Guru99_Login_valid {
-	private static Properties prop = new Properties();
+	Properties prop=Guru99_Login_invalid.getProp();
 	WebDriver driver=Guru99_Login_invalid.getDriver();
-			@Test(priority=4)
+			@Test(priority=3)
     public void enter_credentials()
     {
 		System.out.println("Valid Login scenario");
@@ -25,7 +25,7 @@ public class Guru99_Login_valid {
 		.sendKeys(prop.getProperty("password"));
     }
 	
-	@Test(priority=5)
+	@Test(priority=4)
     public void click_login() throws IOException
     {
 		Guru99_Login_Page.Login(driver).click();
