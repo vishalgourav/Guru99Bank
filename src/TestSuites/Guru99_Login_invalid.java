@@ -6,9 +6,6 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeSuite;
@@ -65,18 +62,7 @@ public class Guru99_Login_invalid {
 		.sendKeys(username);
 Guru99_Login_Page.Enter_Password(driver)
 .sendKeys(password);
+Guru99_Login_Page.Reset(driver).click();
     }
-	@Test(priority=3)
-    public void click_login() throws IOException
-    {
-		//Guru99_Login_Page.Login(driver).click();
-		Guru99_Login_Page.Reset(driver).click();
-		String title=driver.getTitle();
-		System.out.println(title);
-//		Assert.assertEquals("My account - My Store", title);
-		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("D:\\Auto_Ajoy\\Guru99Bank\\src\\Screenshots\\testsuccess.jpeg"));
-		    }
-	 
 }
 
