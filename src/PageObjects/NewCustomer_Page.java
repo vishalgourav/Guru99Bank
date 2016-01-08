@@ -78,4 +78,9 @@ public static WebElement Click_Reset(WebDriver driver)
 	element=driver.findElement(By.name("res"));
 	return element;
 }
+ public static WebElement Click_Submit(WebDriver driver)
+ {
+	 element = driver.findElement(By.name("sub"));
+	 return element;
+ }
 }

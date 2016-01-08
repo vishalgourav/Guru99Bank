@@ -13,7 +13,7 @@ public class NewCustomer {
 	  }
   @Test(priority=1)
   public void enter_customer_name() {
-	  NewCustomer_Page.Enter_Customer_Name(driver).sendKeys("Customer1");
+	  NewCustomer_Page.Enter_Customer_Name(driver).sendKeys("Customert");
   }
 //  @Test(priority=2)
 //  public void select_gender() {
@@ -25,7 +25,7 @@ public void select_gender() {
 }
 @Test(priority=3)
 public void enter_dob() {
-	  	  NewCustomer_Page.Enter_DOB(driver).sendKeys("05/01/90");
+	  	  NewCustomer_Page.Enter_DOB(driver).sendKeys("05-01-2012");
 }
 @Test(priority=4)
 public void enter_address() {
@@ -41,7 +41,7 @@ public void enter_state() {
 }
 @Test(priority=6)
 public void enter_pin() {
-	  	  NewCustomer_Page.Enter_Pin(driver).sendKeys("11111");
+	  	  NewCustomer_Page.Enter_Pin(driver).sendKeys("111111");
 }
 @Test(priority=7)
 public void enter_mobile_no() {
@@ -49,14 +49,18 @@ public void enter_mobile_no() {
 }
 @Test(priority=8)
 public void enter_email() {
-	  	  NewCustomer_Page.Enter_Email(driver).sendKeys("abcd@abc.com");
+	  	  NewCustomer_Page.Enter_Email(driver).sendKeys("abcde@abc.com");
 }
 @Test(priority=9)
 public void enter_password() {
 	  	  NewCustomer_Page.Enter_Password(driver).sendKeys("password");
 	  	  }
+//@Test(priority=10)
+//public void click_reset() {
+//	  	  NewCustomer_Page.Click_Reset(driver).click();
+//}
 @Test(priority=10)
 public void click_submit() {
-	  	  NewCustomer_Page.Click_Reset(driver).click();
+	  	  NewCustomer_Page.Click_Submit(driver).click();
 }
 }

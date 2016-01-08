@@ -4,7 +4,7 @@
    <classes> 
                     <class name="TestSuites.Guru99_Login_invalid"/> 
                      <class name="TestSuites.Guru99_Login_valid"/> 
-                     <class name="TestSuites.NewCustomer"/> 
+                      <class name="TestSuites.Edit_Customer"/> 
                                                                                                                                                           </classes>
       </test>
   </suite> 
