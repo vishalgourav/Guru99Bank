@@ -4,7 +4,9 @@
    <classes> 
                     <class name="TestSuites.Guru99_Login_invalid"/> 
                      <class name="TestSuites.Guru99_Login_valid"/> 
-                      <class name="TestSuites.Edit_Customer"/> 
+                      <class name="TestSuites.New_Account"/> 
+                      <class name="TestSuites.Logout"/> 
+                      
                                                                                                                                                           </classes>
       </test>
   </suite> 
